@@ -1,0 +1,16 @@
+.content {
+	background-color: #ffffff;
+	margin-left: 55px;
+	margin-right: 55px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 500px;
+	padding: 25px;
+	padding-top: 40px;
+
+}
+
+.heading {
+	font-family: "Arial", Georgia;
+	font-size: 30px;
+}
