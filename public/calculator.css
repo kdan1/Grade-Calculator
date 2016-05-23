@@ -1,16 +1,84 @@
 .content {
 	background-color: #ffffff;
-	margin-left: 55px;
-	margin-right: 55px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	height: 500px;
+	margin-left: 4%;
+	margin-right: 4%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 	padding: 25px;
 	padding-top: 40px;
 
 }
 
+.activity {
+  font-family: "Cambria", Times;
+  font-size: 20px;
+  background-color: #e7eff1;
+  padding: 1%;
+  border-style: solid;
+  border-color: #dce0e3;
+  border-width: 1.5px;
+  width: 75%;
+}
+
 .heading {
-	font-family: "Arial", Georgia;
 	font-size: 30px;
+  font-family: "Arial", Georgia;
+}
+
+table, td, th {
+  border: 2px solid #c5c5c5;
+}
+
+th {
+  background-color: #dddddd;
+  padding: 5px;
+  text-align: left;
+  font-family: "Cambria", Times;
+}
+
+td {
+  padding: 5px;
+  font-family: "Cambria", Times;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr:hover {
+  background-color: #e3e5e7;
+}
+
+.marks {
+  height: 35px;
+  width: 100px;
+}
+
+.buttons {
+  background-color: #aa1116;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  margin: 5px;
+  align: right;
+  height: 30px;
+  width: 80px;
+  font-family: "Arial", Georgia;
+  cursor: pointer;
+}
+
+.buttons:hover {
+  background-color: #0ba8c4;
+
+}
+
+input[class="boxes"] {
+	background: transparent;
+	border: none;
+	font-family: "Cambria", Times;
+	height: 35px;
+	width: 100px;
+	font-size: 15px;
 }

@@ -2,12 +2,84 @@
 	<head>
 		<title>Grade Calculator</title>
 		<link rel="stylesheet" type="text/css" href="calculator.css">
+		<script src="calculator.js" type="text/javascript"></script>
 	</head>
-	<body bgcolor="a6192e">
-	<div class="content">
-		<div class="heading">
-			<p>Grade Calculator</p>
-			<p>Hello</p>
+
+	<body bgcolor="a7192f">
+  	<div class="content">
+  		<div class="heading">
+  			<p>Grade Calculator</p>
+  		</div>
+      <div class="activity">
+        <p style="color:a7192f"><b>Activities</b></p>
+        <p style="font-size:17px">Give grades to the numeric activities:</p>
+				<p style="font-size:17px">Click on the activity names and short names to edit them.</p>
+				<form name="gradeCalc">
+        <table style="width:100%">
+						<col width="22%">
+						<col width="22%">
+						<col width="31%">
+						<col width="25%">
+            <tr>
+              <th>Name</th>
+              <th>Short Name</th>
+              <th>Grade</th>
+              <th>Percentage</th>
+            </tr>
+            <tr>
+              <td><input type="text" class="boxes" value="Activity 1"></td>
+              <td><input type="text" class="boxes" value="A1"></td>
+              <td style="padding: 7px">
+                  <input id="a1num1" class="marks" type="text"/> /
+                  <input id="a1num2" class="marks" type="text"/>
+              </td>
+              <td><input type="text" name="a1percent" class="boxes" readonly></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="boxes" value="Activity 2"></td>
+              <td><input type="text" class="boxes" value="A2"></td>
+              <td style="padding: 7px">
+                <input id="a2num1" class="marks" type="text"/> /
+                <input id="a2num2" class="marks" type="text"/>
+              </td>
+              <td><input type="text" name="a2percent" class="boxes" readonly></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="boxes" value="Activity 3"></td>
+              <td><input type="text" class="boxes" value="A3"></td>
+              <td style="padding: 7px">
+                <input id="a3num1" class="marks"/> /
+                <input id="a3num2" class="marks"/>
+              </td>
+              <td><input type="text" name="a3percent" class="boxes" readonly></td>
+            </tr>
+            <tr>
+              <td><input type="text" class="boxes" value="Activity 4"></td>
+              <td><input type="text" class="boxes" value="A4"></td>
+              <td style="padding: 7px">
+                <input id="a4num1" class="marks" type="text" /> /
+                <input id="a4num2" class="marks" type="text" />
+              </td>
+              <td><input type="text" name="a4percent" class="boxes" readonly></td>
+            </tr>
+            <tr>
+              <td style="padding-bottom: 3px; padding-top: 17px;"><b>TOTAL</b></td>
+              <td></td>
+              <td></td>
+              <td><input type="text" name="totalpercent" class="boxes" readonly></td>
+            </tr>
+        </table>
+        </br>
+        </br>
+				<input title="Calculates: (sum of all grades / total number of grades)" class="buttons" onclick="mean()" style="float: right" type="button" value="MEAN" />
+				<input title="Calculates: (sum of all grade values / sum of maximums from all aggregated items)" class="buttons" onclick="average()" style="float: right" type="button" value="AVERAGE" />
+				<input title="Erases all data in input fields and Percentage column. Activity names and short names will revert back to their default names." class="buttons" onclick="reset()" style="float: right" type="button" value="RESET" />
+				</br>
+				</br>
+				<p style="float: right; font-size: 15px">Hover over buttons for details.</p>
+			</form>
 	</div>
+	</br>
 	</body>
+
 </html>
