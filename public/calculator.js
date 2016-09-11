@@ -133,7 +133,6 @@ function average() {
     document.gradeCalc.totalpercent.value = average.toFixed(3) + " " + "=" + " " + average_rounded + "%";
   }
 }
-
 function reset() {
   document.gradeCalc.a1num1.value = "";
   document.gradeCalc.a1num2.value = "";
